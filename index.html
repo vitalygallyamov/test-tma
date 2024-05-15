@@ -4,8 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Telegram Mini Apps Vanilla JS Sample App</title>
+    <title>Test TMA</title>
     <style>
+        #canvas {
+            background-color:#30c0df;
+            border: 2px solid black;
+            display: block;
+            margin: auto;
+            padding: auto;
+        }
+    </style>
+    <!-- <style>
         body {
             --bg-color: var(--tg-theme-bg-color);
             font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif;
@@ -59,11 +68,11 @@
         #viewport-params-expand {
             top: 30px;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
-    <main>
+    <!-- <main>
         <div align="center">
             <a href="https://ton.org/"><img width="48" src="./assets/tapps.png" alt="logo of telegram web apps"></a>
         </div>
@@ -90,9 +99,14 @@
     </main>
     <div id="viewport"></div>
     <div id="viewport-params-size"></div>
-    <div id="viewport-params-expand"></div>
+    <div id="viewport-params-expand"></div> -->
+    <canvas id="canvas" width="276" height="414"></canvas>
+    <script src="game.js"></script>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
+        Telegram.WebApp.ready();
+    </script>
+    <!-- <script>
         // Init TWA
         Telegram.WebApp.ready();
 
@@ -153,7 +167,7 @@
             document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
         });
 
-    </script>
+    </script> -->
 
     <!-- Eruda is console for mobile browsers -->
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
